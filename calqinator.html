@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calqinator | Simple yet Elegant</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading"><h1>Calqinator</h1></div>
+  <table class="calc">
+    <tr class="row1">
+      <td colspan="2"><input type="text" placeholder="0" id="values"></td>
+      <td id="btn"><input type="button" value="<-" onclick="bkspce()"></td>
+      <td id="btn"><input type="button" value="C" onclick="clrscr()"></td>
+    </tr>
+    <tr>
+      <td id="btn"><input type="button" value="1" onclick="enter_val('1')"></td>
+      <td id="btn"><input type="button" value="2" onclick="enter_val('2')"></td>
+      <td id="btn"><input type="button" value="3" onclick="enter_val('3')"></td>
+      <td id="btn"><input type="button" value="+" onclick="enter_val('+')"></td>
+    </tr>
+    <tr>
+      <td id="btn"><input type="button" value="4" onclick="enter_val('4')"></td>
+      <td id="btn"><input type="button" value="5" onclick="enter_val('5')"></td>
+      <td id="btn"><input type="button" value="6" onclick="enter_val('6')"></td>
+      <td id="btn"><input type="button" value="-" onclick="enter_val('-')"></td>
+    </tr>
+    <tr>
+      <td id="btn"><input type="button" value="7" onclick="enter_val('7')"></td>
+      <td id="btn"><input type="button" value="8" onclick="enter_val('8')"></td>
+      <td id="btn"><input type="button" value="9" onclick="enter_val('9')"></td>
+      <td id="btn"><input type="button" value="*" onclick="enter_val('*')"></td>
+    </tr>
+    <tr>
+      <td id="btn"><input type="button" value="." onclick="enter_val('.')"> </td>
+      <td id="btn"><input type="button" value="0" onclick="enter_val('0')"></td>
+      <td id="btn"><input type="button" value="=" onclick="solve()"></td>
+      <td id="btn"><input type="button" value="/" onclick="enter_val('/')"></td>
+    </tr>
+  </table>
+  
+
+</body>
+
+</html>
