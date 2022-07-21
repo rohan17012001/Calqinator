@@ -17,7 +17,13 @@ function solve(){
     document.getElementById("values").value="";
   }
   else{
-    var n=x.toFixed(7);
-  document.getElementById("values").value=n;
+    var n=+x
+    if(n-Math.floor(n)!=0){
+      var v=n.toFixed(6);
+      document.getElementById("values").value=v;
+    }
+    else{
+      document.getElementById("values").value=n;
+    }
   }
 }
