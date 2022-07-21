@@ -1,3 +1,6 @@
+document.onkeydown = function (e) {
+  return false;
+}
 function enter_val(val){
   document.getElementById("values").value+=val;
 }
